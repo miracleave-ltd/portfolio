@@ -1,6 +1,6 @@
 ## はじめに
 
-今回はgatsby-starterを利用して爆速ポートフォリオ作りを行いたいと思います。
+次のgatsby-starterを利用して爆速ポートフォリオ作りを行いたいと思います。
 
 - [gatsby-starter-portfolio-cara](https://www.gatsbyjs.org/starters/LekoArts/gatsby-starter-portfolio-cara/)
 
@@ -172,16 +172,16 @@ npm install gh-pages --save-dev
 GitHubでポートフォリオ用リポジトリを作成していきます。  
 まずは**New**ボタンをクリックします。
 
-![](static/github-create-repo-1.png)
+![](static/GithubCreateRepo1.png)
 
 **Repository name**に適当なリポジトリ名を入力して、**Create repository**をクリックします。  
 ※ 基本デフォルト設定で今回行います。
 
-![](static/github-create-repo-2.png)
+![](static/GithubCreateRepo2.png)
 
 リポジトリ作成ができます。
 
-![](static/github-create-repo-3.png)
+![](static/GithubCreateRepo3.png)
 
 #### gh-pages
 
