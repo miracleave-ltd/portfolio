@@ -268,16 +268,16 @@ npm install gh-pages --save-dev
 GitHubでポートフォリオ用リポジトリを作成していきます。  
 まずは**New**ボタンをクリックします。
 
-![](static/GitHubCreateRepo1.png)
+![](static/GitHubCreate-Repo1.png)
 
 **Repository name**に適当なリポジトリ名を入力して、**Create repository**をクリックします。  
 ※ 基本デフォルト設定で今回行います。
 
-![](static/GitHubCreateRepo2.png)
+![](static/GitHubCreate-Repo2.png)
 
 リポジトリ作成ができます。
 
-![](static/GitHubCreateRepo3.png)
+![](static/GitHubCreate-Repo3.png)
 
 #### デプロイ用設定
 
