@@ -266,17 +266,14 @@ npm install gh-pages --save-dev
 #### リポジトリ作成
 
 GitHubでポートフォリオ用リポジトリを作成していきます。  
-まずは**New**ボタンをクリックします。
-
+まずは**New**ボタンをクリックします。  
 ![](static/GitHubCreate-Repo1.png)
 
 **Repository name**に適当なリポジトリ名を入力して、**Create repository**をクリックします。  
-※ 基本デフォルト設定で今回行います。
-
+※ 基本デフォルト設定で今回行います。  
 ![](static/GitHubCreate-Repo2.png)
 
-リポジトリ作成ができます。
-
+リポジトリ作成ができます。  
 ![](static/GitHubCreate-Repo3.png)
 
 #### デプロイ用設定
@@ -324,8 +321,7 @@ git remote add origin https://github.com/mira-naochin/portfolio.git
 git push -u origin master
 ```
 
-GitHub側にgatsbyが反映されていることを確認してください。
-
+GitHub側にgatsbyが反映されていることを確認してください。  
 ![](static/GitHub.png)
 
 #### GitHub Pagesに公開
@@ -339,24 +335,22 @@ npm run deploy
 
 #### GitHub Pagesの確認
 
-GitHubのリポジトリページにあるSettingsをクリックします。
-
+GitHubのリポジトリページにあるSettingsをクリックします。  
 ![](static/GitHubSetting.png)
 
-Settingsページの下部にあるGitHubPages欄にあるURLより公開されたポートフォリオが確認できます。
-
+Settingsページの下部にあるGitHubPages欄にあるURLより公開されたポートフォリオが確認できます。  
 ![](static/GitHubPages.png)
 
 ![](static/portfolio.png)
 
 ### 応用編
 
-私は今回知った拡張子 .mdxですが、なんとなんとMarkdownとJSXを使えます。  
-Markdownは使い慣れた方も多いかと思いますが、MDXを日常使いしている方は聞いたことないです．．..
-[MDX](https://mdxjs.com/)の公式サイトより使い方を学んで、俺流ポートフォリオサイトを作成して楽しんでください！
+今回利用した拡張子 .mdxですが、なんとなんとMarkdownとJSXを使えます。  
+Markdownは使い慣れた方も多いかと思いますが、MDXを日常使いしている方は聞いたことないです．．..  
+[MDX](https://mdxjs.com/)の公式サイトより使い方を学んで、俺流ポートフォリオサイトを作成して楽しんでください！  
 
 [Gatsby Plugin Library](https://www.gatsbyjs.com/plugins/)で様々なプラグインが公開されています。  
-こちらを活用することで自分オリジナルのサイトを作ることができるので、余裕がある方は模索してみてください！
+こちらを活用することで自分オリジナルのサイトを作ることができるので、余裕がある方は模索してみてください！  
 
 ### 余談
 
