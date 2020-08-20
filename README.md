@@ -333,6 +333,29 @@ GitHubPagesにデプロイします。
 npm run deploy
 ```
 
+※ 次のエラーが出た場合は、gitの初期設定が行われていない状態となります。  
+
+```
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@goorm.(none)')
+```
+
+その場合は、以下のコマンドでgitにデフォルト設定を行ってください。  
+
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
 #### GitHub Pagesの確認
 
 GitHubのリポジトリページにあるSettingsをクリックします。  
