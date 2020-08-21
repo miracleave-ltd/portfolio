@@ -151,8 +151,13 @@ gatsby new portfolio https://github.com/LekoArts/gatsby-starter-portfolio-cara
 portfolioのフォルダの中にportfolioが作成されてしまいますので、下のコマンドでファイルを移動してください。  
 
 ```
-# .tempファイル削除, 子portfolioを親portfolioにコピー, 子portfolio削除を行います。
-rm .temp && cp -r . ../ && rm -rf portfolio
+# 子portfolioを親portfolioにコピーを行います。
+cp -r . ../
+```
+
+コピー完了後、子portfolioは必要ありませんので削除します。
+```
+rm -rf portfolio
 ```
 
 ### 3. 開発サーバーを起動しよう
@@ -284,7 +289,8 @@ scriptsの中に次のコマンドを追記してください。
 ```
 "deploy": "gatsby build --prefix-paths && gh-pages -d public"
 ```
-※ "clean": "gatsby clean"の後ろにカンマを忘れずに追加してください。
+※1 16行目付近の「"clean": "gatsby clean"」の下に追加  
+※2 "clean": "gatsby clean"の後ろにカンマを忘れずに追加してください。  
 
 ![](static/goormIDE18.png)
 
@@ -292,12 +298,14 @@ GithubPagesのドメインをそのまま使用する場合、gatsby-config.js�
 gatsby-config.jsに２つの設定を追加します。  
 
 module.exportsの中にpathPrefixを追加してください。  
+※ 13行目付近の「},」の下に追加  
 
 ```
 pathPrefix: "/portfolio",
 ```
 
 module.exports/pluginsのgatsby-plugin-manifestにあるoptionsの中にcrossOriginを追加してください。  
+※ 33行目付近の「start_url: `/`,」の下に追加  
 
 ```
 crossOrigin: `use-credentials`,
@@ -318,19 +326,9 @@ git init
 例
 ```
 git remote add origin https://github.com/mira-naochin/portfolio.git
+git add .
+git commit -m "first commit"
 git push -u origin master
-```
-
-GitHub側にgatsbyが反映されていることを確認してください。  
-![](static/GitHub.png)
-
-#### GitHub Pagesに公開
-
-GitHubPagesにデプロイします。  
-次のコマンドを実行することで「gh-pages」ブランチが自動で作成され、GitHubの設定にGitHub Pages公開ブランチの設定が行われます。  
-
-```
-npm run deploy
 ```
 
 ※ 次のエラーが出た場合は、gitの初期設定が行われていない状態となります。  
@@ -354,6 +352,18 @@ fatal: unable to auto-detect email address (got 'root@goorm.(none)')
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+```
+
+GitHub側にgatsbyが反映されていることを確認してください。  
+![](static/GitHub.png)
+
+#### GitHub Pagesに公開
+
+GitHubPagesにデプロイします。  
+次のコマンドを実行することで「gh-pages」ブランチが自動で作成され、GitHubの設定にGitHub Pages公開ブランチの設定が行われます。  
+
+```
+npm run deploy
 ```
 
 #### GitHub Pagesの確認
