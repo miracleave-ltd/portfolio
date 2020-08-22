@@ -378,7 +378,6 @@ GitHubのリポジトリページにあるSettingsをクリックします。
 ![](static/GitHubSetting.png)
 
 Settingsページの下部にあるGitHubPages欄にあるURLより公開されたポートフォリオが確認できます。  
-
 ![](static/GitHubPages.png)
 
 ![](static/portfolio.png)
