@@ -274,6 +274,8 @@ GitHubでポートフォリオ用リポジトリを作成していきます。
 ![](static/GitHubCreate-Repo1.png)
 
 **Repository name**に適当なリポジトリ名を入力して、**Create repository**をクリックします。  
+**ここで決めたリポジトリ名は、後述のpathPrefixに記載します。なので忘れないようにしておきましょう**  
+このREADMEでは **portfolio** をリポジトリ名にします。こだわりのない方は**portfolio**で作ることをお勧めます。  
 ※ 基本デフォルト設定で今回行います。  
 ![](static/GitHubCreate-Repo2.png)
 
@@ -297,8 +299,13 @@ GithubPagesのドメインをそのまま使用する場合、gatsby-config.js�
 gatsby-config.jsに２つの設定を追加します。  
 
 module.exportsの中にpathPrefixを追加してください。  
+**pathPrefixの値は先程作成したリポジトリ名を使用します。**  
 ※ 13行目付近の「},」の下に追加  
 
+```
+pathPrefix: "/{リポジトリ名}",
+```
+このREADMEでは **portfolio** をリポジトリ名にしているので以下のように設定します  
 ```
 pathPrefix: "/portfolio",
 ```
