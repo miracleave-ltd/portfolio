@@ -331,7 +331,7 @@ git init
 
 例
 ```
-git remote add origin https://github.com/mira-naochin/portfolio.git
+git remote add origin https://github.com/${YOUR_GITHUB_USER_NAME}/portfolio.git
 git add .
 git commit -m "first commit"
 git push -u origin master
