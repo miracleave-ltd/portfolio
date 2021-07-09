@@ -356,8 +356,14 @@ fatal: unable to auto-detect email address (got 'root@goorm.(none)')
 その場合は、以下のコマンドでgitにデフォルト設定を行ってください。  
 
 ```
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+git config --global user.email "you@example.com" // ここは自分のgithubアカウントのuser nameです！
+git config --global user.name "Your Name" // ここは自分のgithubアカウントのpasswordです！
+```
+※　git push -u origin master後にuser-nameとpasswordの入力を求められる事があります。
+
+```
+Username for 'https://github.com': // ここは自分のgithubアカウントのuser nameです！
+Password for 'https://${YOUR_NAME}@github.com': // ここは自分のgithubアカウントのpasswordです！
 ```
 
 GitHub側にgatsbyが反映されていることを確認してください。  
@@ -370,6 +376,16 @@ GitHubPagesにデプロイします。
 
 ```
 npm run deploy
+```
+
+※　npm run deploy後にuser-nameとpasswordの入力を求められる事があります。
+
+```
+Username for 'https://github.com': // ここは自分のgithubアカウントのuser nameです！
+Password for 'https://${YOUR_NAME}@github.com': // ここは自分のgithubアカウントのpasswordです！
+
+published
+// publishedと表示されればデプロイ成功です！
 ```
 
 #### GitHub Pagesの確認
