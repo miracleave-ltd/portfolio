@@ -113,7 +113,7 @@ GitHubログインを行うと次のように連携確認画面になります�
 - 追加モジュール/パッケージ：Node.jsをバージョン 12.xx にアップグレードします。
 
 設定を行いましたら、右上の「コンテナの作成(Ctrl + M)」をクリックします。  
-![](static/goormIDE7.png)
+![](static/new_goormIDE7.png)
 
 開発環境作成中ですので、少々お待ちください。  
 ![](static/goormIDE8.png)
